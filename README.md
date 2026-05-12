@@ -1,0 +1,14 @@
+# Dokumentasi Subscriber - MODUL 9
+
+## Pertanyaan Refleksi
+
+### 1. Apa itu AMQP?
+**AMQP (Advanced Message Queuing Protocol)** adalah protokol standar terbuka untuk *message-oriented middleware*. Protokol ini memungkinkan aplikasi yang berbeda (bahkan dengan bahasa pemrograman berbeda) untuk saling berkirim pesan secara asinkron, aman, dan efisien melalui sebuah perantara yang disebut *message broker*.
+
+### 2. Apa maksud dari `guest:guest@localhost:5672`?
+Ini adalah *connection string* yang digunakan untuk terhubung ke layanan **RabbitMQ**. Berikut adalah rincian komponennya:
+
+* **`guest` (pertama)**: *Username* default untuk autentikasi ke RabbitMQ.
+* **`guest` (kedua)**: *Password* default untuk user tersebut.
+* **`localhost`**: Alamat server (*host*) tempat RabbitMQ berjalan (dalam hal ini, di komputer lokal melalui Docker).
+* **`5672`**: Port standar yang digunakan oleh protokol AMQP untuk komunikasi data.
